@@ -11,12 +11,8 @@ struct ListDetail: View {
   
     var body: some View {
         VStack {
-                List{
-                    ForEach(0..<10, id: \.self){ number in
-                        ListRow()
-                    }
-                }
-            }
+            Text("fff")
+        }
     }
 }
 

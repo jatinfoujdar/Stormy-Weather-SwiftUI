@@ -8,10 +8,11 @@
 import SwiftUI
 
 struct ListRow: View {
+    var cityWeather : CityWeather
     var body: some View {
         VStack {
             HStack {
-                Text("San Francisco")
+                Text(cityWeather.name)
                     .font(.headline)
                 Spacer()
                 Image(systemName: "cloud.sun.fill")
@@ -23,5 +24,5 @@ struct ListRow: View {
 }
 
 #Preview {
-    ListRow()
+    ListRow(cityWeather: cityWeathers[0])
 }

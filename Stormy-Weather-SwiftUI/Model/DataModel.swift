@@ -1,7 +1,7 @@
 import Foundation
 
 
-var loadcity : [Weathers] = load("landMark.json")
+var cityWeathers: [CityWeather] = load("landMark.json")
 
 
 func load<T: Decodable>(_ filename: String) -> T {

@@ -1,94 +1,72 @@
-{
-  "cities": [
+[
     {
-      "id": 1,
-      "name": "Mumbai",
-      "weather": {
+        "id": 1,
+        "name": "Mumbai",
         "temp": 30.0,
         "humidity": 70,
         "description": "Few clouds"
-      }
     },
     {
-      "id": 2,
-      "name": "Delhi",
-      "weather": {
+        "id": 2,
+        "name": "Delhi",
         "temp": 25.0,
         "humidity": 50,
         "description": "Clear sky"
-      }
     },
     {
-      "id": 3,
-      "name": "Bangalore",
-      "weather": {
+        "id": 3,
+        "name": "Bangalore",
         "temp": 28.0,
         "humidity": 60,
         "description": "Scattered clouds"
-      }
     },
     {
-      "id": 4,
-      "name": "Kolkata",
-      "weather": {
+        "id": 4,
+        "name": "Kolkata",
         "temp": 32.0,
         "humidity": 80,
         "description": "Light rain"
-      }
     },
     {
-      "id": 5,
-      "name": "Chennai",
-      "weather": {
+        "id": 5,
+        "name": "Chennai",
         "temp": 33.0,
         "humidity": 75,
         "description": "Thunderstorm"
-      }
     },
     {
-      "id": 6,
-      "name": "Hyderabad",
-      "weather": {
+        "id": 6,
+        "name": "Hyderabad",
         "temp": 29.0,
         "humidity": 65,
         "description": "Partly cloudy"
-      }
     },
     {
-      "id": 7,
-      "name": "Ahmedabad",
-      "weather": {
+        "id": 7,
+        "name": "Ahmedabad",
         "temp": 34.0,
         "humidity": 40,
         "description": "Clear sky"
-      }
     },
     {
-      "id": 8,
-      "name": "Pune",
-      "weather": {
+        "id": 8,
+        "name": "Pune",
         "temp": 27.0,
         "humidity": 55,
         "description": "Mostly sunny"
-      }
     },
     {
-      "id": 9,
-      "name": "Jaipur",
-      "weather": {
+        "id": 9,
+        "name": "Jaipur",
         "temp": 31.0,
         "humidity": 45,
         "description": "Sunny"
-      }
     },
     {
-      "id": 10,
-      "name": "Lucknow",
-      "weather": {
+        "id": 10,
+        "name": "Lucknow",
         "temp": 24.0,
         "humidity": 65,
         "description": "Fog"
-      }
     }
-  ]
-}
+]
