@@ -9,11 +9,16 @@ import SwiftUI
 
 struct ListRow: View {
     var body: some View {
-        Text("San Francisco")
-            .font(.headline)
-        Image(systemName: "cloud.sun.fill")
-            .font(.title)
-
+        VStack {
+            HStack {
+                Text("San Francisco")
+                    .font(.headline)
+                Spacer()
+                Image(systemName: "cloud.sun.fill")
+                    .font(.title)
+            }
+            .padding()
+        }
     }
 }
 

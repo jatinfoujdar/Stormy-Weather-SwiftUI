@@ -8,20 +8,18 @@
 import SwiftUI
 
 struct ListDetail: View {
-    var city : Weathers
+  
     var body: some View {
         VStack {
-            Image(systemName: city.name)
-                .font(.largeTitle)
-            Text(city.name)
-                .font(.title)
-            Text("Temperature: \(city.temp)")
-            Text("Humidity: \(city.humidity)")
-            Text("Description: \(city.description)")
-        }
+                List{
+                    ForEach(0..<10, id: \.self){ number in
+                        ListRow()
+                    }
+                }
+            }
     }
 }
 
 #Preview {
-    ListDetail(city: Weathers[0])
+    ListDetail()
 }
