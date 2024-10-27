@@ -9,14 +9,17 @@ import SwiftUI
 
 struct CityList: View {
     var body: some View {
-        List(cityWeathers){
-             cityWeather in
+        NavigationView { 
+            List(cityWeathers, id: \.self) { cityWeather in
                 ListRow(cityWeather: cityWeather)
+            }
+            .navigationTitle("Cities")
         }
-        .navigationTitle("Cities")
     }
 }
 
 #Preview {
     CityList()
 }
+
+
