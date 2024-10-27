@@ -9,7 +9,11 @@ import SwiftUI
 
 struct CityList: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        List(cityWeathers){
+             cityWeather in
+                ListRow(cityWeather: cityWeather)
+        }
+        .navigationTitle("Cities")
     }
 }
 

@@ -25,4 +25,6 @@ struct ListRow: View {
 
 #Preview {
     ListRow(cityWeather: cityWeathers[0])
+    ListRow(cityWeather: cityWeathers[1])
+
 }

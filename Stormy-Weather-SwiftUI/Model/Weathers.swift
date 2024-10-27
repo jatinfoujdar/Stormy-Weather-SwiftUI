@@ -1,7 +1,7 @@
 import Foundation
 
 
-struct CityWeather: Hashable, Codable {
+struct CityWeather: Hashable, Codable, Identifiable {
     var id: Int
     var name: String
     var temp: Double
