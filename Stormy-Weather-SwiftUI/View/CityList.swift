@@ -18,11 +18,16 @@ struct CityList: View {
     
     var body: some View {
         NavigationSplitView {
-            List(filteredCity) { cityWeather in
-                NavigationLink {
-                    ListDetail(city: cityWeather)
-                }label:{
-                    ListRow(cityWeather: cityWeather)
+            List{
+                Toggle(isOn: $showFavoritesOnly){
+                    Text("Favorites only")
+                }
+                ForEach(filteredCity) { cityWeather in
+                    NavigationLink {
+                        ListDetail(city: cityWeather)
+                    }label:{
+                        ListRow(cityWeather: cityWeather)
+                    }
                 }
             }
             .navigationTitle("Cities")
