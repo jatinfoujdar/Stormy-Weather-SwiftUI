@@ -1,19 +1,22 @@
 import SwiftUI
 
 struct ListDetail: View {
+    @Environment(ModelData.self) var modelData
     var city: CityWeather
 
+    var cityIndex : Int {
+        modelData.cityWeathers.firstIndex(where: { $0.id == city.id })!
+    }
+    
     var body: some View {
         VStack {
             Text(city.name)
                 .font(.largeTitle)
                 .padding()
-
-            city.image
-                .resizable()
-                .scaledToFit()
-                .frame(height: 200)
-                .padding()
+            
+            CircleImage(image: city.image)
+            .offset(y: 50)
+            .padding(.bottom, 50)
 
             Text("Temperature: \(city.temp)°C")
                 .font(.title2)
@@ -36,5 +39,7 @@ struct ListDetail: View {
 }
 
 #Preview {
-    ListDetail(city: ModelData().cityWeathers[0])
+    let modelData = ModelData()
+    return ListDetail(city: ModelData().cityWeathers[0])
+        .environment(modelData)
 }
