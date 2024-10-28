@@ -9,17 +9,20 @@ struct ListDetail: View {
     }
     
     var body: some View {
+        @Bindable var modelData = modelData
         VStack {
             Text(city.name)
                 .font(.largeTitle)
-                .padding()
             
             CircleImage(image: city.image)
             .offset(y: 50)
             .padding(.bottom, 50)
-
-            Text("Temperature: \(city.temp)°C")
-                .font(.title2)
+            HStack{
+                Text("Temperature: \(city.temp)°C")
+                    .font(.title2)
+                Spacer()
+                FavoriteButton(isSet: $modelData.cityWeathers[cityIndex].isFavorite)
+            }
             Text("Humidity: \(city.humidity)%")
                 .font(.title3)
             Text("Description: \(city.description)")
