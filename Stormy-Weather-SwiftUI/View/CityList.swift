@@ -9,11 +9,17 @@ import SwiftUI
 
 struct CityList: View {
     var body: some View {
-        NavigationView { 
-            List(cityWeathers, id: \.self) { cityWeather in
-                ListRow(cityWeather: cityWeather)
+        NavigationSplitView {
+            List(cityWeathers) { cityWeather in
+                NavigationLink {
+                    ListDetail(city: cityWeather)
+                }label:{
+                    ListRow(cityWeather: cityWeather)
+                }
             }
             .navigationTitle("Cities")
+        }detail: {
+            Text("Select a City")
         }
     }
 }
