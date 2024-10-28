@@ -8,9 +8,17 @@
 import SwiftUI
 
 struct CityList: View {
+    @State private var showFavoritesOnly = false
+    
+    var filteredCity : [CityWeather] {
+        cityWeathers.filter { cityWeather in
+            (!showFavoritesOnly || cityWeather.isFavorite)
+        }
+    }
+    
     var body: some View {
         NavigationSplitView {
-            List(cityWeathers) { cityWeather in
+            List(filteredCity) { cityWeather in
                 NavigationLink {
                     ListDetail(city: cityWeather)
                 }label:{
