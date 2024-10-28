@@ -30,6 +30,7 @@ struct CityList: View {
                     }
                 }
             }
+            .animation(.default, value: filteredCity)
             .navigationTitle("Cities")
         }detail: {
             Text("Select a City")
