@@ -10,15 +10,18 @@ import SwiftUI
 struct ListRow: View {
     var cityWeather : CityWeather
     var body: some View {
-        VStack {
             HStack {
+                  cityWeather.image
+                    .resizable()
+                    .frame(width: 50, height: 50)
                 Text(cityWeather.name)
                     .font(.headline)
                 Spacer()
-                Image(systemName: "cloud.sun.fill")
-                    .font(.title)
-            }
-            .padding()
+               
+                if cityWeather.isFavorite{
+                    Image(systemName: "star.fill")
+                        .foregroundStyle(.yellow)
+                }
         }
     }
 }

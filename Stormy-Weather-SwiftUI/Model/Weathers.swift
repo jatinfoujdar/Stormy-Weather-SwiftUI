@@ -8,6 +8,7 @@ struct CityWeather: Hashable, Codable, Identifiable {
     var temp: Double
     var humidity: Int
     var description: String
+    var isFavorite: Bool
     
     private var imageName: String
     var image: Image{
