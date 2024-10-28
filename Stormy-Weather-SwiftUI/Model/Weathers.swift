@@ -1,4 +1,5 @@
 import Foundation
+import SwiftUI
 
 
 struct CityWeather: Hashable, Codable, Identifiable {
@@ -7,4 +8,9 @@ struct CityWeather: Hashable, Codable, Identifiable {
     var temp: Double
     var humidity: Int
     var description: String
+    
+    private var imageName: String
+    var image: Image{
+        Image(imageName)
+    }
 }

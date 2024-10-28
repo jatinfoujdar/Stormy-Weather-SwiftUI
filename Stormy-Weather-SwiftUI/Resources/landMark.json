@@ -4,69 +4,79 @@
         "name": "Mumbai",
         "temp": 30.0,
         "humidity": 70,
-        "description": "Few clouds"
+        "description": "Few clouds",
+        "imageName": "hiddenlake"
     },
     {
         "id": 2,
         "name": "Delhi",
         "temp": 25.0,
         "humidity": 50,
-        "description": "Clear sky"
+        "description": "Clear sky",
+        "imageName": "silversalmoncreek"
     },
     {
         "id": 3,
         "name": "Bangalore",
         "temp": 28.0,
         "humidity": 60,
-        "description": "Scattered clouds"
+        "description": "Scattered clouds",
+        "imageName": "chilkoottrail"
     },
     {
         "id": 4,
         "name": "Kolkata",
         "temp": 32.0,
         "humidity": 80,
-        "description": "Light rain"
+        "description": "Light rain",
+        "imageName": "stmarylake"
     },
     {
         "id": 5,
         "name": "Chennai",
         "temp": 33.0,
         "humidity": 75,
-        "description": "Thunderstorm"
+        "description": "Thunderstorm",
+        "imageName": "twinlake"
     },
     {
         "id": 6,
         "name": "Hyderabad",
         "temp": 29.0,
         "humidity": 65,
-        "description": "Partly cloudy"
+        "description": "Partly cloudy",
+        "imageName": "lakemcdonald"
     },
     {
         "id": 7,
         "name": "Ahmedabad",
         "temp": 34.0,
         "humidity": 40,
-        "description": "Clear sky"
+        "description": "Clear sky",
+        "imageName": "charleyrivers"
     },
     {
         "id": 8,
         "name": "Pune",
         "temp": 27.0,
         "humidity": 55,
-        "description": "Mostly sunny"
+        "description": "Mostly sunny",
+        "imageName": "icybay"
     },
     {
         "id": 9,
         "name": "Jaipur",
         "temp": 31.0,
         "humidity": 45,
-        "description": "Sunny"
+        "description": "Sunny",
+        "imageName": "rainbowlake"
     },
     {
         "id": 10,
         "name": "Lucknow",
         "temp": 24.0,
         "humidity": 65,
-        "description": "Fog"
+        "description": "Fog",
+        "imageName": "hiddenlake"
     }
 ]
