@@ -23,10 +23,12 @@ struct ListDetail: View {
                 Spacer()
                 FavoriteButton(isSet: $modelData.cityWeathers[cityIndex].isFavorite)
             }
-            Text("Humidity: \(city.humidity)%")
-                .font(.title3)
-            Text("Description: \(city.description)")
-                .font(.body)
+            .padding()
+                    Text("Humidity: \(city.humidity)%")
+                        .font(.title3)
+                    Text("Description: \(city.description)")
+                        .font(.body)
+        
             
             if city.isFavorite {
                 Spacer()
