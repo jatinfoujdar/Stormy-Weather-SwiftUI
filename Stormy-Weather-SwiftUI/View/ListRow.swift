@@ -27,7 +27,9 @@ struct ListRow: View {
 }
 
 #Preview {
-    ListRow(cityWeather: cityWeathers[0])
-    ListRow(cityWeather: cityWeathers[1])
-
+    let cityWeathers = ModelData().cityWeathers
+    return Group{
+        ListRow(cityWeather: cityWeathers[0])
+        ListRow(cityWeather: cityWeathers[1])
+    }
 }

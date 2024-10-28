@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct Stormy_Weather_SwiftUIApp: App {
+    @State private var modelData = ModelData()
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environment(modelData)
         }
     }
 }

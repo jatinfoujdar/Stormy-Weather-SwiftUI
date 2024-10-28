@@ -1,8 +1,10 @@
 import Foundation
 
 
-var cityWeathers: [CityWeather] = load("landMark.json")
-
+@Observable
+class ModelData{
+    var cityWeathers: [CityWeather] = load("landMark.json")
+}
 
 func load<T: Decodable>(_ filename: String) -> T {
 

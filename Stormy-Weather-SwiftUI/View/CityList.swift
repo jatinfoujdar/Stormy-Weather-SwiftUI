@@ -8,10 +8,11 @@
 import SwiftUI
 
 struct CityList: View {
+    @Environment(ModelData.self) var modelData
     @State private var showFavoritesOnly = false
     
     var filteredCity : [CityWeather] {
-        cityWeathers.filter { cityWeather in
+        modelData.cityWeathers.filter { cityWeather in
             (!showFavoritesOnly || cityWeather.isFavorite)
         }
     }
@@ -40,6 +41,7 @@ struct CityList: View {
 
 #Preview {
     CityList()
+        .environment(ModelData())
 }
 
 

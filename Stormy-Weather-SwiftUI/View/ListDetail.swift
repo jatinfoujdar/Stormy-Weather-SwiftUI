@@ -30,12 +30,11 @@ struct ListDetail: View {
 
             Spacer()
         }
-        .navigationTitle(city.name) // Set the navigation title to the city name
+        .navigationTitle(city.name) 
         .padding()
     }
 }
 
 #Preview {
-    // Use a sample city for previewing
-    ListDetail(city: cityWeathers[0])
+    ListDetail(city: ModelData().cityWeathers[0])
 }
