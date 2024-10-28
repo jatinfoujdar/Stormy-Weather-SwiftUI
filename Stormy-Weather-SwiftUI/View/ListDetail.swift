@@ -29,6 +29,7 @@ struct ListDetail: View {
                 .font(.body)
             
             if city.isFavorite {
+                Spacer()
                 Text("❤️ This city is a favorite!")
                     .font(.headline)
                     .foregroundColor(.yellow)
@@ -38,6 +39,10 @@ struct ListDetail: View {
         }
         .navigationTitle(city.name) 
         .padding()
+        .background(
+            LinearGradient(gradient: Gradient(colors: [Color.yellow, Color.purple]), startPoint: .top, endPoint: .bottom)
+                        .edgesIgnoringSafeArea(.all)
+                )
     }
 }
 

@@ -11,9 +11,13 @@ struct ListRow: View {
     var cityWeather : CityWeather
     var body: some View {
             HStack {
-                  cityWeather.image
+                cityWeather.image
                     .resizable()
+                    .aspectRatio(contentMode: .fill)
                     .frame(width: 50, height: 50)
+                    .clipShape(Circle())
+                    .overlay(Circle().stroke(Color.gray, lineWidth: 2))
+                
                 Text(cityWeather.name)
                     .font(.headline)
                 Spacer()

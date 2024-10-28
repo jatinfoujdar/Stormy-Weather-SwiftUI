@@ -19,9 +19,11 @@ struct CityList: View {
     
     var body: some View {
         NavigationSplitView {
+            
             List{
                 Toggle(isOn: $showFavoritesOnly){
                     Text("Favorites only")
+                    
                 }
                 ForEach(filteredCity) { cityWeather in
                     NavigationLink {
